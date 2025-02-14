@@ -1,0 +1,101 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#container{
+    min-height: 100vh;    
+    display: flex;
+}
+
+.left{
+    width: 50vw;
+    overflow-y: scroll;
+}
+
+.right{
+    width: 50%;
+    position: fixed; /* Fix the right section in place */
+    top: 0; /* Align it to the top of the viewport */
+    right: 0; /* Align it to the right edge of the viewport */
+    height: 100vh; /* Ensure it fills the viewport height */
+    background-color: rgb(255, 255, 255);
+}
+
+.back{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: black;
+    position: absolute;
+    letter-spacing: -4px;
+    word-spacing: 3px;
+    top: 0px;  /* Distance from the top */
+    right: 10px;  /* Distance from the right edge */
+    text-decoration: none;
+}
+
+.back a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.homepagetext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin-left: 5px;
+    letter-spacing: -4px;
+    word-spacing: 3px;
+    text-align: left;
+}
+
+.table{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    position: absolute;
+    right: 95px;
+    top: 15vh;
+    text-align: center;
+}
+
+td {
+    width: 50px; /* Fixed width */
+    height: 40px; /* Fixed height */
+}
+
+#red1, #red2, #red3{
+    background-color: red;
+}
+
+#orange1, #orange2, #orange3, #orange4, #orange5, #orange6{
+    background-color: orange;
+}
+
+#yellow1, #yellow2, #yellow3, #yellow4, #yellow5, #yellow6{
+    background-color: rgb(255, 234, 0);
+}
+
+#green1, #green2, #green3, #green4, #green5{
+    background-color: green;
+}
+
+#blue1, #blue2, #blue3, #blue4{
+    background-color: blue;
+}
+
+#purple1, #purple2, #purple3, #purple4, #purple5, #purple6{
+    background-color: purple;
+}
+
+

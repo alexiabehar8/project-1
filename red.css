@@ -1,0 +1,241 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.back a:hover{
+    color: white;
+}
+
+#container{
+    min-height: 100vw;    
+    display: flex;
+}
+
+.left{
+    width: 50vw;
+    overflow-y: scroll;
+}
+
+.right{
+    width: 50vw;
+    position: fixed; /* Fix the right section in place */
+    top: 0; /* Align it to the top of the viewport */
+    right: 0; /* Align it to the right edge of the viewport */
+    height: 100vh; /* Ensure it fills the viewport height */
+    background-color: rgb(255, 255, 255);
+}
+
+.instructions, .poem{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-left: 5px;
+    letter-spacing: -4px;
+    word-spacing: 3px;
+    text-align: left;
+}
+
+.poem{
+    margin-top: 20rem;
+} 
+
+#sectionred{
+    margin-top: 6.5rem;
+}
+
+#sectionpurple{
+    margin-top: 22rem;
+    margin-bottom: 22rem;
+}
+
+.whiteout{
+    color: white;
+}
+
+.back{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: black;
+    position: absolute;
+    letter-spacing: -4px;
+    word-spacing: 3px;
+    top: 0px;  /* Distance from the top */
+    right: 10px;  /* Distance from the right edge */
+}
+
+
+#table{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+
+
+td {
+    width: 50px; /* Fixed width */
+    height: 40px; /* Fixed height */
+}
+
+td:hover {
+    border-radius: 70%;
+    transform: scale(1.2); /* Scale effect for zooming */
+    outline: 1px solid black; /* Visible black outline on hover */
+    cursor: pointer;
+}
+
+td:after{
+    border-radius: 70%; /* Rounded corners */
+    transform: scale(1.2); /* Scale effect for zooming */
+    outline: 1px solid black; /* Visible black outline on hover */
+}
+
+
+
+.arrow-wrapper {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 0; /* Reset any margin at the top */
+}
+
+.arrow-wrapper {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 0; /* Reset any margin at the top */
+}
+
+.arrow {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1px; /* Adjust size as needed */
+    display: inline-block;
+    transform: rotate(90deg); /* Rotate 90 degrees clockwise */
+    transform-origin: center; /* Ensure rotation is centered */
+    white-space: nowrap; /* Prevents the arrow from breaking into multiple lines */
+    letter-spacing: normal; /* Resets any unwanted letter spacing */
+}
+
+.arrow a {
+    display: inline-block;  /* Ensure the link behaves like an inline block */
+    font-size: 50px; /* Keep the same font size as the arrow */
+    letter-spacing: normal; /* Avoid any unwanted spacing */
+    font-family: sans-serif; /* Ensures no conflicts with letter-spacing */
+}
+
+.arrow a:hover {
+    color: white; /* Change color on hover */
+}
+
+
+.arrow-wrapper2 {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    right: 0; /* Position it on the right side */
+    margin-top: -60px;
+}
+
+.arrow2 {
+    font-size: 50px; /* Adjust as needed */
+    display: inline-block;
+    transform: rotate(90deg); /* Rotate the arrow 90 degrees to point down */
+    transform-origin: center; /* Ensure the rotation is centered */
+    margin-top: -20px;
+
+}
+
+
+@media screen and (max-width: 962px) {
+    /* Change the container's flex direction to column */
+    #container {
+        flex-direction: column;
+    }
+
+    /* Make the left section (poem) take full width */
+    .left {
+        width: 100vw;
+        overflow-y: auto; /* Ensure scrolling works if needed */
+        margin-top: 5%;
+    }
+
+    /* Make the right section (table) take full width */
+    .right {
+        width: 100vw;
+        position: relative; /* Remove fixed positioning to stack vertically */
+        height: auto; /* Allow height to adjust naturally */
+    }
+
+    .left {
+        order: 2; /* Position the poem below */
+    }
+
+    .right {
+        order: 1; /* Position the table (puzzle) above */
+    }
+
+    
+    #table{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 11%;
+        margin-left: 0%;
+    }
+    
+    td{
+        width: 50px;
+        height: 30px;
+    }
+
+   
+
+    /* Optional: Adjust the font size and positioning of table cells */
+
+   
+    td:hover {
+        border-radius: 70%;
+        transform: scale(1.2); /* Scale effect for zooming */
+        outline: 1px solid black; /* Visible black outline on hover */
+        cursor: pointer;
+    }
+    
+    td:after{
+        border-radius: 70%; /* Rounded corners */
+        transform: scale(1.2); /* Scale effect for zooming */
+        outline: 1px solid black; /* Visible black outline on hover */
+    }
+    /* Adjust other elements as necessary */
+    .poem {
+        font-size: 30px; /* Reduce font size for better readability on smaller screens */
+        margin-top: 1rem; /* Add some spacing at the top */
+    }
+
+    .instructions, .poem{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        margin-left: 2px;
+        letter-spacing: -2px;
+        word-spacing: 1.5px;
+    }
+    
+    .back{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        color: black;
+        position: absolute;
+        letter-spacing: -2px;
+        word-spacing: 1.5px;
+        top: 0px;  /* Distance from the top */
+        right: 10px;  /* Distance from the right edge */
+    }
+    
+    }

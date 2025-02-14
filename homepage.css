@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.homepagetext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin-left: 1rem;
+    letter-spacing: -6px;
+}
+
+.bottomtext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin-left: 1rem;
+    letter-spacing: -6px;
+    position: absolute;
+    bottom: 0px;
+    color: inherit;
+}
+
+
+.bottomtext a:hover{
+    color: white;
+}
+
+.back{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 57px;
+    color: black;
+    position: absolute;
+    letter-spacing: -6px;
+    word-spacing: 3px;
+    top: 0px;  /* Distance from the top */
+    right: 10px;  /* Distance from the right edge */
+}
+
+.back a:hover{
+    color: white;
+}
