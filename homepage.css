@@ -43,3 +43,35 @@ a{
 .back a:hover{
     color: white;
 }
+
+@media screen and (max-width: 962px) {
+    .homepagetext{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        margin-left: 1rem;
+        letter-spacing: -3.7px;
+    }
+
+    .bottomtext{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        margin-left: 1rem;
+        letter-spacing: -3.7px;
+        position: absolute;
+        bottom: 0px;
+        color: inherit;
+    }
+
+    .back{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 38px;
+        color: black;
+        position: absolute;
+        letter-spacing: -3.7px;
+        word-spacing: 3px;
+        top: 0px;  /* Distance from the top */
+        right: 10px;  /* Distance from the right edge */
+    }
+    
+
+}

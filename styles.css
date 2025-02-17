@@ -30,3 +30,14 @@ a{
 .arrow a:hover{
 color: white;
 }
+
+@media screen and (max-width: 962px) {
+    .title{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 9rem;
+        color: black;
+        margin-left: 1rem;
+        letter-spacing: -13px;
+        word-spacing: 0px;
+    }
+}

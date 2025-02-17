@@ -12,25 +12,30 @@ a{
     color: black;
 }
 
+.back a:hover{
+    color: white;
+}
 
 #container{
-    min-height: 100vh;    
+    min-height: 100vw;    
     display: flex;
 }
 
 .left{
     width: 50vw;
-    overflow-y: scroll;
+
 }
 
+
 .right{
-    width: 50%;
+    width: 50vw;
     position: fixed; /* Fix the right section in place */
     top: 0; /* Align it to the top of the viewport */
     right: 0; /* Align it to the right edge of the viewport */
     height: 100vh; /* Ensure it fills the viewport height */
     background-color: rgb(255, 255, 255);
 }
+
 
 .back{
     font-family: 'Times New Roman', Times, serif;
@@ -63,12 +68,10 @@ a{
 .table{
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
-    position: absolute;
-    right: 95px;
-    top: 15vh;
     text-align: center;
+    margin-top: 20%;
+    margin-left: 15%;
 }
-
 td {
     width: 50px; /* Fixed width */
     height: 40px; /* Fixed height */
@@ -99,3 +102,64 @@ td {
 }
 
 
+@media screen and (max-width: 962px) {
+
+    #container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    /* Make the left section (poem) take full width */
+    .left {
+        width: 100vw;
+        overflow-y: auto; /* Ensure scrolling works if needed */
+        order: 2; /* Position the poem below */
+    }
+
+    /* Make the right section (table) take full width */
+    .right {
+        width: 100vw;
+        height: auto; /* Allow height to adjust naturally */
+        order: 1; /* Position the table (puzzle) above */
+        padding-left: 50px;
+
+    }
+    
+    #table{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+        text-align: center;
+        margin-top: 7%;
+    }
+    
+    td{
+        width: 40px;
+        height: 30px;
+    }
+
+    .back{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        color: black;
+        position: absolute;
+        letter-spacing: -2px;
+        word-spacing: 1.5px;
+        top: 0px;  /* Distance from the top */
+        right: 10px;  /* Distance from the right edge */
+        text-decoration: none;
+    }
+
+    .homepagetext{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        margin-left: 10px;
+        margin-top: 6px;
+        letter-spacing: -2px;
+        word-spacing: 1.5px;
+        text-align: left;
+        top: 0px;
+        position: fixed;
+    }
+    
+
+}
